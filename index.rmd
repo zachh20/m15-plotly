@@ -1,0 +1,12 @@
+# getting stuff
+install.packages('plotly')
+library('plotly')
+
+# heres some new data
+roommates <- c('Bob', 'Rasik', 'Ethan', 'Aaron')
+buckets <- c(10, 4, 11, 9)
+speed <- c(6, 9, 8, 9)
+
+roommate.stats <- data.frame(roommates, buckets, speed)
+
+chart <- plot_ly(roommate.stats, x = `bucket)
